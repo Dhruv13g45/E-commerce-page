@@ -139,12 +139,12 @@ main {
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    width:80%;
-    margin: 5% 10%;
+    gap: 5%;
+    width:90%;
+    margin: 5% 5%;
 }
 #product-section {
-    width:40%;
+    width:50%;
 }
 #product-section .currentproduct {
     width:100%;
@@ -155,23 +155,11 @@ main {
  .currentproduct:hover {
     transform: scale(1.05);
 }
-#product-extra-img-section {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top:2rem;
-}
-.extra-img  img{
-    border-radius:50%;
-    cursor: pointer;
-    width:70px;
-}
+
 .arrows {
     position:relative;
     width:100%;
     height:30px;
-    visibility: hidden;
     display: flex ;
     justify-content: space-between;
     align-items: center;
@@ -192,7 +180,7 @@ main {
     font-weight: 500;
 }
 #discription-section {
-    width:30%;
+    width:50%;
 }
 .discout {
     display: inline;
@@ -266,7 +254,7 @@ main {
     .cart-section {
         right:2%;
         top:5%;
-        width:250px
+        width:250px;
     }
 }
 
@@ -274,17 +262,15 @@ main {
     .hamBtn {
         display: block;
     }
-    .navbar{
-        margin: 0%;
-    }
     .nav-items-section{
         display: none;
         background-color:white;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
         position: absolute;
-        width:30%;
+        width:50%;
         height: 100%;
-        top: 0px;
+        border-radius: 10px;
+        inset:0px 0px;
     }
     .close {
         display: none;
@@ -299,26 +285,10 @@ main {
         margin:5% 3%;
     }
     main {
-        flex-direction: column;
-    }
-    .extra-img {
-        display: none;
+        flex-direction:column;
+        gap:5%;
     }
     #product-section{
-        width:100% !important;
-    }
-    .current-product-img {
         width:100%;
     }
-    .currentproduct {
-        width:100%;
-    }
-    .currentproduct:hover{
-        cursor:none;
-        transform: scale(1);
-    }
-    .arrows {
-        visibility: visible !important;
-    }
-    
 }
